@@ -1,0 +1,73 @@
+body{
+        background-image: url(regis.gif);
+        background-color: rgb(120, 173, 216);
+        
+        
+}
+.registro{
+        text-align: center;
+}
+
+.cliente{
+        /*margin-bottom: 200px;*/
+        width: 20%;
+        padding: 10px 20px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 200px;
+}
+
+input{
+        border: none;
+        border-bottom: 2px solid black;
+        margin-top: 5%;
+        margin-left: auto;
+        text-align: center;
+}
+
+form{
+        border: 5px solid rgb(64, 89, 204); 
+}
+
+.cliente button{
+        background-color: rgb(7, 7, 7);
+        width: 50%;
+        color: aliceblue;
+        text-align: center;
+        cursor: pointer;
+        border: none;
+        margin: 5%;
+        padding: 10px 20px;
+}
+
+.cliente button:hover{
+        background-color: black;
+}
+
+
+h1{
+        text-align: center;
+}
+
+h5{
+        text-align: center;
+        color: black;
+        margin-top: 0;
+}
+
+h3{
+        color: rgb(184, 6, 15);
+        text-align: center;
+}
+@media (width <= 540px) {
+        .cliente {display: block;}
+}
+@media (width <= 380px) {
+        .form {display: block;}
+}
+@media (width <= 180px) {
+        .input {display: block;}
+}
+
+    

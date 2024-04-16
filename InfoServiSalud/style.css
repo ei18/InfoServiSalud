@@ -1,0 +1,618 @@
+/* Cuerpo */
+
+body{
+    background: rgb(248, 248, 245);
+    /* margin: 1% !important; */
+    /* padding: 1px solid; */
+    padding: 2%;
+    margin: 0 auto;
+    display: block;
+    /* margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 2%; */
+    flex-wrap: wrap;
+    flex-direction: row wrap;
+    
+    
+}
+
+header{
+    background: rgb(243, 243, 240);
+    color: black;
+    /* margin: 0;
+    padding: 0; */
+    text-align: center;
+
+}
+
+.menú > li{
+    display: inline-block;
+
+}
+
+.menú > li > a{
+    display: block;
+    /* padding: 15px 20px; */
+    color: #fffcfc;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+.menú li :hover{
+    color: rgb(243, 243, 243);
+    transition: all .3s;
+    
+    cursor: pointer;
+}
+
+.submenú{
+    position: absolute;
+    background: #ffffff;
+    width: 120%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+}
+
+.submenú li a{
+display: block;
+padding: 15px;
+color: rgb(28, 27, 27);
+font-family: sans-serif;
+text-decoration: none;
+}
+
+.menú li:hover .submenú{
+    visibility: visible;
+    opacity: 1;
+    position: absolute;
+    text-align: left;
+    width: 30%;
+}
+
+
+.btn{
+    padding: 10px;
+    background-color: rgb(241, 235, 235);
+    border-radius: 16px;
+    border: 0% !important;
+    font-size: 15px;
+    transition: .4s;
+    margin-top: 10px;
+}
+    
+.btn:hover{
+    background: rgb(6, 110, 126);
+    color: white;
+}
+
+.bt{
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 16px;
+    border: none;
+    font-size: 15px;
+    transition: .4s;
+}
+
+.heading{
+    display: flex;
+    border: 0px solid #fff;
+    background-color: rgb(174, 205, 218);
+}
+
+a{
+    border: 1px;
+    height: 90%;
+    padding: 1%;
+}
+
+.last{
+    border-right: none;
+}
+
+.wraper{
+    width: 90%;
+    background-color: #fff;
+    display: flex;
+    flex-flow: row wrap; 
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr)); */
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+.contenido{
+    width: 18%;
+    cursor: pointer; 
+}
+
+.titulo{
+    justify-content: center;
+    text-align: center;
+    color: rgb(5, 5, 5);
+}
+
+.titulo-contenido{
+    color: rgb(6, 110, 126);
+}
+
+.parrafo-centrado{
+    text-align: justify;
+}
+
+
+
+/* Botones idioma */
+.es{
+    color: black;
+
+}
+
+.en{
+    color: #00a1ff;
+}
+
+.check{
+    position: relative;
+    width: 50px;
+}
+
+.check:before{
+     content:'';
+     position: absolute;
+     width: 50px;
+     height: 25px;
+     background: black;
+     border-radius: 25px;
+}
+
+.check:after{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    border-radius: 25px;
+    transition: 0.25s;
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+
+.check:checked:after{
+    left: 25px;
+    border: 2px solid #00a1ff;
+}
+
+.check:checked:before{
+background: #00a1ff;
+}
+
+
+/* Encabezado */
+
+.com{
+    width: auto;
+    height: 95px;
+}
+
+.n1{
+    /* margin: -6% auto; */
+    width: 82%;
+    margin-top: -5%;
+    display: flex;
+    flex-wrap: wrap ;
+    color: black;
+    gap: 20px;
+}
+
+.text .n2{
+    /* margin: 4% auto; */
+    /* width: 78%;
+    height: 90%; */
+    flex-wrap: wrap ;
+    margin-top: -20%;
+    
+    color: rgb(0, 0, 0);
+    /* gap: 50px; */
+    text-align: center;
+}
+.q{
+    font-weight: normal;
+}
+
+.nav{
+    display: flex;
+    margin: 4%;
+    margin-top: 2%;
+    flex: auto;  
+    height: 100%;
+    justify-content: space-between;
+    border: 0px solid;
+    background-color: rgb(174, 205, 218);
+    position: relative;
+}
+
+.nav ul{
+   list-style: none; 
+}
+
+/* Imagenes pag inicio */
+
+.art{
+    
+    transition: all 300ms;
+    position: relative;    
+}
+
+.art:hover{
+    transform: scale(1.15);
+}
+
+.los{
+    width: 15%;
+}
+
+.medi{
+    
+    transition: all 300ms;
+    position: relative;    
+}
+
+.medi:hover{
+    transform: scale(1.15);
+}
+
+.camen{
+    width: 15%;
+}
+
+.prom{
+    
+    transition: all 300ms;
+    position: relative;    
+}
+
+.prom:hover{
+    transform: scale(1.15);
+}
+
+.prev{
+    width: 15%;
+}
+
+.contac{
+    
+    transition: all 300ms;
+    position: relative;    
+}
+
+.contac:hover{
+    transform: scale(1.15);
+}
+
+.tos{
+    width: 15%;
+}
+
+/* Pyp 1: vacunación */
+
+.esque{
+    text-align: center;
+
+}
+
+.carnetadult{
+    text-align: center;
+}
+
+.cov19{
+    text-align: center;
+}
+
+.esquema{
+    
+    transition: all 300ms;
+    position: relative;    
+}
+
+.esquema:hover{
+    transform: scale(1.15);
+}
+
+.vacunaniño{
+    width: 15%;
+}
+
+.adulto{
+    
+    transition: all 300ms;
+    position: relative;    
+}
+
+.adulto:hover{
+    transform: scale(1.15);
+}
+
+.vacunadulto{
+    width: 15%;
+}
+
+.vacuna{
+    
+    transition: all 300ms;
+    position: relative;    
+}
+
+.vacuna:hover{
+    transform: scale(1.15);
+}
+
+.covid{
+    width: 15%;
+}
+
+
+/* Pyp 2 */
+
+.alimentos{
+    text-align: center;
+}
+
+.plat{
+    text-align: center;
+}
+
+.ej{
+    text-align: center;
+}
+
+
+.alimen{
+    
+    transition: all 300ms;
+    position: relative; 
+    width: 400px;
+    height: 600px; 
+}
+
+.alimen:hover{
+    transform: scale(1.15);
+}
+
+.tacion{
+    width: 15%;
+}
+
+.pla{
+    
+    transition: all 300ms;
+    position: relative;
+    width: 600px;
+    height: 500;    
+}
+
+.pla:hover{
+    transform: scale(1.15);
+}
+
+.to{
+    width: 15%;
+}
+
+.ejer{
+    
+    transition: all 300ms;
+    position: relative;
+    width: 400px; 
+    height: 600px;    
+}
+
+.ejer:hover{
+    transform: scale(1.15);
+}
+
+.cicio{
+    width: 15%;
+}
+
+
+/* Pyp 3 */
+
+.car{
+    
+    transition: all 300ms;
+    position: relative;
+    width: 500px;
+    height: 500px;   
+}
+
+.car:hover{
+    transform: scale(1.15);
+}
+
+.dio{
+    width: 15%;
+}
+
+.can{
+    
+    transition: all 300ms;
+    position: relative; 
+    width: 500px; 
+    height: 500px;   
+}
+
+.can:hover{
+    transform: scale(1.15);
+}
+
+.cer{
+    width: 15%;
+}
+
+.enferme{
+    
+    transition: all 300ms;
+    position: relative;   
+    width: 400px;
+    height: 400px; 
+}
+
+.enferme:hover{
+    transform: scale(1.15);
+}
+
+.respi{
+    width: 15%;
+    
+}
+
+.dia{
+    
+    transition: all 300ms;
+    position: relative;  
+    width: 400px;
+    height: 400px;  
+}
+
+.dia:hover{
+    transform: scale(1.15);
+}
+
+.betes{
+    width: 15%;
+}
+
+/* Más */
+
+.linea{
+    
+    transition: all 300ms;
+    position: relative;    
+}
+
+.linea:hover{
+    transform: scale(1.15);
+}
+
+.amiga{
+    width: 15%;
+}
+
+.cards{
+    text-align: center;
+}
+
+.bien{
+    text-align: center;
+}
+
+.imagfinal{
+    text-align: center;
+}
+
+.linea{
+    text-align: center;
+}
+
+.lineaamig{
+    text-align: center;
+}
+
+.escucha{
+    text-align: center;
+}
+
+/* Parte final */
+
+.about-services {
+    background-color: rgb(174, 205, 218);
+}
+
+.button-redsocial a i{
+    font-size: 30px;
+    color: rgb(18, 2, 247);
+    transform: rotate(-45deg);
+}
+
+.button-redsocial a i:hover{
+    transform: rotate(-405deg);
+}   
+
+.button-redsocial a {
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(0, 0, 0);
+    width: 40px;
+    height: 40px;
+    transition: .9s;
+    transform: rotate(45deg);
+}
+
+.button-redsocial a:hover{
+    transform: rotate(405deg);
+
+}
+
+.Politicas{
+    padding: 30px;
+    margin: 0 auto;
+}
+
+.hr{
+    display: none;
+}
+
+/* Responsive */
+
+@media (width < 780px){
+    .informacion{
+        display: block  ;
+    }
+}
+
+@media (540px < width < 780px){
+    .informacion{
+        display: block;
+    }
+}
+
+@media (width < 540px){
+    .informacion{
+        display: block;
+    }
+}
+
+@media (max-width: 768px){
+    body {
+        padding: 1px; 
+    }
+}
+
+/* @media (width <=150px) {
+    .heading {display: block;}
+}
+
+@media (width <= 100px) {
+    .nav {display: block;}
+}
+
+@media (width <= 150px){
+    .header {display: block;}
+}
+
+@media (width >500px){
+    .text {display: block;}
+}
+
+@media (widht >=500px){
+    .imagen {display: block;}
+}
+
+@media (widht <=150px){
+    .btn .menú  {display: block;}
+} */
+
